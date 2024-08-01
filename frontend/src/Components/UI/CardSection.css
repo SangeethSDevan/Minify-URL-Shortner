@@ -1,0 +1,50 @@
+.table{
+    margin-top: 4rem;
+    min-width:800px;
+}
+.table table{
+    width: 100%;
+    text-align: center;
+    font-family: "Gabarito";
+}
+.table table thead{
+    background-color: var(--davys-gray);
+}
+.table table tbody .close{
+    cursor: pointer;
+}
+.table table tbody .short{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.table table tbody .short img{
+    border-radius: 50px;
+    padding: 8px;
+    height: 1.2rem;
+    position: absolute;
+    right: 10px;
+}
+.table table tbody .short img:hover{
+    background-color: var(--davys-gray);
+}
+.table table tbody .short a{
+    color: var(--light-green);
+}
+.table table thead th,
+.table table tbody td
+{
+    padding: 10px;
+}
+
+.table p{
+    text-align: center;
+    font-family: "Gabarito";
+    font-size: 1.2rem;
+}
+@media (max-width:860px) {
+    .table{
+        min-width: 95%;
+    }
+}

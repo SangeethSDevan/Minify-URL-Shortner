@@ -1,0 +1,40 @@
+.input{
+    text-align: center;
+}
+.input p{
+    font-family: "Gabarito";
+    font-size: 1.6rem;
+}
+.input p span{
+    color: var(--screamin-green);
+}
+.input .input-comp{
+    display: flex;
+    flex-wrap: wrap;
+}
+.input .input-comp input{
+    min-width: 400px;
+    max-width: 800px;
+    padding: 8px 10px;
+    font-family: "Gabarito";
+    font-size: 1.2rem;
+    border-radius: 50px;
+    background-color: var(--jet);
+    border: 2px solid var(--screamin-green);
+    margin-right: 5px;
+    color: white;
+}
+.input .input-comp input:focus{
+    outline-color: var(--screamin-green);
+}
+.input .input-comp button{
+    padding: 8px 10px;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    background-color: var(--screamin-green);
+    border: none;
+    font-family: "Gabarito";
+}
+.input .input-comp button:hover{
+    background-color: var(--light-green);
+}

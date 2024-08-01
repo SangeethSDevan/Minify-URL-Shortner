@@ -1,0 +1,35 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 80%;
+}
+.navbar .nav-logo{
+    font-weight: bold;
+    font-size: 1.5rem;
+    font-family: "Gabarito", sans-serif;
+    color: var(--davys-gray);
+}
+.navbar .nav-user span{
+    font-family: "Gabarito", sans-serif;
+    font-size: 1.3rem;
+    margin-left: 5px;
+}
+.navbar .info{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.navbar .info button{
+     height: 30px;  
+     background-color: transparent;
+     border-radius: 60px;
+     border: none;
+}
+.navbar .info button img{
+    height: 1.3rem;
+}
+.navbar .info button:hover{
+    background-color: var(--davys-gray);
+}
