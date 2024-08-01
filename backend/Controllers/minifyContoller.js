@@ -3,7 +3,9 @@ const minify=require("../model/minifyModel")
 exports.toShortify=async(req,res)=>{
     const {url}=req.body
     try{
-        req.body.url=url.includes("http://")?url:`http://${url}`
+         req.body.url = url.includes("http://") || url.includes("https://") 
+      ? url 
+      : `http://${url}`;
         await minify.create(req.body)
         res.status(201).json({
             status:"success",
@@ -47,11 +49,7 @@ exports.getLinks=async(req,res)=>{
 exports.deleteLink = async (req, res) => {
     try {
         const { id } = req.params;
-        console.log("ID received:", id);
-
         const data = await minify.findByIdAndDelete(id);
-        console.log("Data deleted:", data);
-
         if (!data) {
             return res.status(404).json({
                 status: "fail",
