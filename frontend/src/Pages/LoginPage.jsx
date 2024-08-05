@@ -1,5 +1,6 @@
 import React from 'react'
 import Form from '../Components/Form/Form'
+import Navbar from '../Components/UI/Navbar'
 
 function LoginPage() {
   return (

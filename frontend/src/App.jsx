@@ -9,6 +9,7 @@ import { configureStore } from "@reduxjs/toolkit";
 import { Provider } from "react-redux";
 import userReducer from "./Data/userReducer";
 import activityReducer from "./Data/activityReducer";
+import AboutPage from "./Pages/AboutPage";
 
 export const store = configureStore({
   reducer: {
@@ -36,6 +37,10 @@ function App() {
       path: "/signup",
       element: <SignUpPage />,
     },
+    {
+      path:"/about",
+      element:<AboutPage/>
+    }
   ]);
 
   return (

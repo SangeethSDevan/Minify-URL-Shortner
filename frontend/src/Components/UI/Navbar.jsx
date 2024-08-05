@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import assets from '../../assets/assets'
 import "./Navbar.css"
 import { useNavigate } from 'react-router-dom'
-function Navbar() {
+function Navbar({type}) {
 
   const user=useSelector(state=>state.user.username)
   const dispatch=useDispatch()
@@ -14,11 +14,11 @@ function Navbar() {
       <div className="nav-logo">
         <p>Minify</p>
       </div>
-      <div className="nav-user">
+      {type!=="login"?<div className="nav-user">
         <p>Hi <span> {user}!</span></p>
-      </div>
+      </div>:""}
       <div className="info">
-        <button><img src={assets.info} alt="info" /></button>
+        <button><a href="https://github.com/SangeethSDevan/Minify-URL-Shortner" target='_blank'><img src={assets.info} alt="info"/></a></button>
         <button><img src={assets.logout} alt="logout" onClick={()=>{
           dispatch({type:"USER-LOGOUT"})
           navigate("/login")

@@ -1,0 +1,22 @@
+.err-container{
+    font-family: "Gabarito";
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.err-content{
+   min-width: 300px;
+   max-width: 600px;
+}
+.err-title{
+    display: flex;
+    gap: 20px;
+}
+.err-container h1{
+    font-weight: bold;
+    color: var(--light-green);
+}
+.err-container .link{
+    color: var(--light-green);
+}
